@@ -39,11 +39,7 @@ class SortedList {
   }
 
   sum() {
-    if (!this.items.length) {
-      return 0;
-    } else {
-      return this.items.reduce((acc, next) => acc + next);
-    }
+    return this.items.reduce((acc, next) => acc + next, 0);
   }
 
   avg() {
